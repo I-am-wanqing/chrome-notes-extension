@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Notes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-container">
+      <textarea id="noteInput" placeholder="输入新的笔记..." rows="10" style="width: 100%;"></textarea>
+    </div>
+    <div class="notes-container">
+      <div class="notes-header">
+        <div class="notes-filter">
+          <input type="text" id="searchInput" placeholder="搜索笔记...">
+        </div>
+        <div class="notes-actions">
+          <button id="exportBtn" title="导出选中的笔记" style="margin-left: 10px;">⬆</button>
+        </div>
+      </div>
+      <ul id="notesList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
